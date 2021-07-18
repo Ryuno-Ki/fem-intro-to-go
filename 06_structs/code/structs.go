@@ -8,14 +8,19 @@ type User struct {
 	FirstName, LastName, Email string
 }
 
-// // User is a user type
-// type User struct {
-// ID					       int
-// FirstName, LastName, Email string
-// }
+type Group struct {
+  users          []User
+  spaceAvailable bool
+}
+
+func describeGroup (g Group) {
+  g.spaceAvailable = len(g.users) <= 2
+}
 
 func main() {
 	u := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
 
-	fmt.Println(u)
+	users := []User{u, u, u}
+	g := Group{ users: users, spaceAvailable: true }
+	fmt.Println(g)
 }
