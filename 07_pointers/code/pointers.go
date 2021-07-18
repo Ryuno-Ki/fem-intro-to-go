@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	var name string
+	// * next to type turns it into a pointer type (memory address)
 	var namePointer *string
 
 	fmt.Println("Name:", name)
@@ -14,7 +15,9 @@ func main() {
 
 // func main() {
 // 	var name string = "Beyonce"
+        // Reference memory by /
 // 	var namePointer *string = &name
+        // Derefence address by *
 // 	var nameValue = *namePointer
 
 // 	fmt.Println("Name:", name)
