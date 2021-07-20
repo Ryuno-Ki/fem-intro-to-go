@@ -47,6 +47,7 @@ func main() {
 // )
 
 // func doThings() {
+        // The execution happens Last-in-First-out, i.e. from bottom to top
 // 	defer fmt.Println("First Line but do this last!")
 // 	defer fmt.Println("Do this second to last!")
 // 	fmt.Println("Things And Stuff should happen first")
